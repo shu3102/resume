@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:resume/a_bit_about_me.dart';
+import 'package:resume/footer.dart';
+import 'package:resume/menuline.dart';
 import 'package:resume/namefile.dart';
 import 'package:resume/projects.dart';
+import 'package:resume/technical_skills.dart';
+import 'package:resume/timeline.dart';
 
 void main() {
   runApp(const MyApp());
@@ -50,14 +55,48 @@ class _MyHomePageState extends State<MyHomePage> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: const [
-                // SizedBox(
-                //   child: Text("hi"),
-                // ),
+                // start Menu Bar
+                StartMenuBar(),
+                SizedBox(
+                  height: 20,
+                ),
+
+                // profile section
                 StartingProfileClass(),
                 SizedBox(
-                  height: 50,
+                  height: 20,
                 ),
+
+                // technical skills row
+                MyTechicalSkills(),
+                SizedBox(
+                  height: 20,
+                ),
+
+                // a bit about me section
+                ABitAboutMeSection(),
+                SizedBox(
+                  height: 20,
+                ),
+
+                // project section
                 MyProjectsClass(),
+                SizedBox(
+                  height: 20,
+                ),
+
+                // timeline section that showing life timing
+                // but this is optional
+                TimeLineClass(),
+                SizedBox(
+                  height: 20,
+                ),
+
+                // last footer section
+                FooterSectionLast(),
+                SizedBox(
+                  height: 20,
+                ),
               ],
             ),
           ),
@@ -66,3 +105,15 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
+// title /menu
+// profile section
+// technical skills
+// a bit about me
+
+// projects
+// extra something
+
+// lifeline
+
+// footer

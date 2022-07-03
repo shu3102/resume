@@ -18,10 +18,10 @@ class _MyProjectsClassState extends State<MyProjectsClass> {
       color: Colors.teal,
       height: 500,
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: const [
           Text(
-            "Projects",
+            "Projects in cards",
             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
           ),
         ],

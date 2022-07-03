@@ -22,16 +22,6 @@ class _StartingProfileClassState extends State<StartingProfileClass> {
           children: [
             Expanded(
               child: Container(
-                color: Colors.green,
-                child: Column(
-                  children: const [
-                    Text("Photo"),
-                  ],
-                ),
-              ),
-            ),
-            Expanded(
-              child: Container(
                 color: Colors.amber,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -47,10 +37,22 @@ class _StartingProfileClassState extends State<StartingProfileClass> {
                       style:
                           TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
                     ),
+                    Text("Role"),
+                    Text("About me in two line"),
                   ],
                 ),
               ),
-            )
+            ),
+            Expanded(
+              child: Container(
+                color: Colors.green,
+                child: Column(
+                  children: const [
+                    Text("Photo"),
+                  ],
+                ),
+              ),
+            ),
           ],
         ));
   }
