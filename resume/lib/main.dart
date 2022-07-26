@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:resume/a_bit_about_me.dart';
+
+import 'package:resume/extra.dart';
 import 'package:resume/footer.dart';
 import 'package:resume/menuline.dart';
 import 'package:resume/namefile.dart';
@@ -50,54 +52,62 @@ class _MyHomePageState extends State<MyHomePage> {
       // ),
       body: SingleChildScrollView(
         child: Center(
-          child: Padding(
-            padding: const EdgeInsets.only(left: 400, right: 400),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: const [
-                // start Menu Bar
-                StartMenuBar(),
-                SizedBox(
-                  height: 20,
-                ),
+          child: Container(
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 50),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text("${MediaQuery.of(context).size.width}"),
+                  // start Menu Bar
+                  StartMenuBar(),
+                  SizedBox(
+                    height: 20,
+                  ),
 
-                // profile section
-                StartingProfileClass(),
-                SizedBox(
-                  height: 20,
-                ),
+                  // profile section
+                  StartingProfileClass(),
+                  SizedBox(
+                    height: 20,
+                  ),
 
-                // technical skills row
-                MyTechicalSkills(),
-                SizedBox(
-                  height: 20,
-                ),
+                  // technical skills row
+                  MyTechicalSkills(),
+                  SizedBox(
+                    height: 20,
+                  ),
 
-                // a bit about me section
-                ABitAboutMeSection(),
-                SizedBox(
-                  height: 20,
-                ),
+                  // a bit about me section
+                  ABitAboutMeSection(),
+                  SizedBox(
+                    height: 20,
+                  ),
 
-                // project section
-                MyProjectsClass(),
-                SizedBox(
-                  height: 20,
-                ),
+                  // project section
+                  MyProjectsClass(),
+                  SizedBox(
+                    height: 20,
+                  ),
 
-                // timeline section that showing life timing
-                // but this is optional
-                TimeLineClass(),
-                SizedBox(
-                  height: 20,
-                ),
+                  // timeline section that showing life timing
+                  // but this is optional
+                  TimeLineClass(),
+                  SizedBox(
+                    height: 20,
+                  ),
 
-                // last footer section
-                FooterSectionLast(),
-                SizedBox(
-                  height: 20,
-                ),
-              ],
+                  ExtraWidget(),
+                  SizedBox(
+                    height: 20,
+                  ),
+
+                  // last footer section
+                  FooterSectionLast(),
+                  SizedBox(
+                    height: 20,
+                  ),
+                ],
+              ),
             ),
           ),
         ),

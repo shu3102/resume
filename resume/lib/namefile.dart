@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/widgets.dart';
+import 'package:resume/constants/images/images.dart';
 
 class StartingProfileClass extends StatefulWidget {
   const StartingProfileClass({Key? key}) : super(key: key);
@@ -38,20 +39,16 @@ class _StartingProfileClassState extends State<StartingProfileClass> {
                           TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
                     ),
                     Text("Role"),
-                    Text("About me in two line"),
+                    Text(
+                      "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
+                      style: TextStyle(fontSize: 20),
+                    ),
                   ],
                 ),
               ),
             ),
             Expanded(
-              child: Container(
-                color: Colors.green,
-                child: Column(
-                  children: const [
-                    Text("Photo"),
-                  ],
-                ),
-              ),
+              child: Image.asset(homeImage),
             ),
           ],
         ));
